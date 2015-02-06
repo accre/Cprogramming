@@ -5,9 +5,9 @@ C Programming Examples
 Building executables
 --------------------
 
-- To build all executables simply type:
+- To build all executables type:
 
-	make 
+		make 
 
 - To build a specific executable type:
 
