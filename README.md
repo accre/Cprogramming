@@ -11,18 +11,18 @@ Building executables
 
 - To build a specific executable type:
 
-	make name_of_c_program
+		make name_of_c_program
 
 - To delete all executables type:
 
-	make clean
+		make clean
 
 Running executables
 -------------------
 
 - Type:
 
-	./executable_name
+			./executable_name
 
 File descriptions
 -----------------
