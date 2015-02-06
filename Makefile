@@ -2,7 +2,7 @@ CC=/usr/local/gcc/latest/bin/gcc
 CFLAGS=-Wall
 
 all: hello_world variable_types pass_command_line_options \
-     functions flow_control loops
+     functions flow_control loops pointers structures
 
 hello_world: hello_world.c
 	$(CC) -o $@ $< $(CFLAGS)
@@ -16,7 +16,13 @@ flow_control: flow_control.c
 loops: loops.c
 	$(CC) -o $@ $< $(CFLAGS)
 
+pointers: pointers.c
+	$(CC) -o $@ $< $(CFLAGS)
+
 functions: functions.c
+	$(CC) -o $@ $< $(CFLAGS)
+
+structures: structures.c
 	$(CC) -o $@ $< $(CFLAGS)
 
 pass_command_line_options: pass_command_line_options.c
@@ -31,3 +37,5 @@ clean:
 	rm loops
 	rm functions
 	rm flow_control
+	rm pointers
+	rm structures
