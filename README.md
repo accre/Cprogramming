@@ -24,8 +24,8 @@ Running executables
 
 		./executable_name
 
-File descriptions
------------------
+Files
+-----
 
 If you are learning C programming for the first time,
 the recommended order for exploring these examples is
