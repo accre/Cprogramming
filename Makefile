@@ -2,7 +2,8 @@ CC=/usr/local/gcc/latest/bin/gcc
 CFLAGS=-Wall
 
 all: hello_world variable_types pass_command_line_options \
-     functions flow_control loops pointers structures
+     functions flow_control loops pointers structures \
+     dynamically_allocated_arrays
 
 hello_world: hello_world.c
 	$(CC) -o $@ $< $(CFLAGS)
@@ -25,6 +26,9 @@ functions: functions.c
 structures: structures.c
 	$(CC) -o $@ $< $(CFLAGS)
 
+dynamically_allocated_arrays: dynamically_allocated_arrays.c
+	$(CC) -o $@ $< $(CFLAGS)
+
 pass_command_line_options: pass_command_line_options.c
 	$(CC) -o $@ $< $(CFLAGS)
 
@@ -39,3 +43,4 @@ clean:
 	rm flow_control
 	rm pointers
 	rm structures
+	rm dynamically_allocated_arrays
