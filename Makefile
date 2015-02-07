@@ -3,7 +3,7 @@ CFLAGS=-Wall
 
 all: hello_world variable_types pass_command_line_options \
      functions flow_control loops pointers structures \
-     dynamically_allocated_arrays
+     dynamically_allocated_arrays file_IO
 
 hello_world: hello_world.c
 	$(CC) -o $@ $< $(CFLAGS)
@@ -30,6 +30,9 @@ dynamically_allocated_arrays: dynamically_allocated_arrays.c
 	$(CC) -o $@ $< $(CFLAGS)
 
 pass_command_line_options: pass_command_line_options.c
+	$(CC) -o $@ $< $(CFLAGS)
+
+file_IO: file_IO.c
 	$(CC) -o $@ $< $(CFLAGS)
 
 .PHONY: clean
