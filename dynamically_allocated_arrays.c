@@ -24,6 +24,13 @@ int main(int argc, char **argv)
    // like to reserve, which you can get by muliplying
    // the desired size of the array times sizeof(type)
    int * myDynamicArray = malloc( n * sizeof(int) );
+   // it's good practice to check that the array was
+   // allocated correctly. Doing this by checking for
+   // a NULL pointer.
+   if ( myDynamicArray == NULL ) {
+      printf("Allocation failed, exiting!\n");
+      exit(0);
+   }
 
    // fill and access your dynamic array like any
    // other "normal" array
