@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h> // for atoi and atof
+#include <stdio.h> // printf()
+#include <stdlib.h> // exit(), atoi(), atof()
 
 int main(int argc, char **argv)
 {
