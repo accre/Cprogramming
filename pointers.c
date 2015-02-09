@@ -19,6 +19,9 @@ int main()
   // of i in iPtr. So the "type" for a pointer is memory
   // address.
   iPtr = &i;
+  printf("memory address of i: %p\n",&i);
+  printf("memory address iPtr is pointing to: %p\n",iPtr);
+  printf("memory address of iPtr: %p\n",&iPtr);
   // You can also access the value in memory that a 
   // pointer is pointing to using the * symbol. This
   // is called dereferencing.
