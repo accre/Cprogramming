@@ -30,6 +30,14 @@ float mySimpleFuncByReference(int * iPtr,float * xPtr)
 
 }
 
+void modifyArray( int * array )
+{
+
+   array[0] = 5;
+   array[1] = 12;
+
+}
+
 
 int main()
 {
@@ -50,6 +58,11 @@ int main()
    // propogate to main() 
    y = mySimpleFuncByReference(&i,&x);
    printf("i: %d x: %10.5f y: %10.5f\n",i,x,y);
+
+   int myArray[2] = { 0, 0 };
+   printf("Before function call, myArray[0]: %d myArray[1]: %d\n",myArray[0],myArray[1]);
+   modifyArray(myArray);
+   printf("After function call, myArray[0]: %d myArray[1]: %d\n",myArray[0],myArray[1]);
 
    return 0;
 
