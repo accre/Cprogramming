@@ -1,4 +1,4 @@
-CC=/usr/local/gcc/latest/bin/gcc
+CC=gcc
 CFLAGS=-Wall
 
 all: hello_world variable_types pass_command_line_options \
@@ -47,3 +47,4 @@ clean:
 	rm pointers
 	rm structures
 	rm dynamically_allocated_arrays
+	rm file_IO
